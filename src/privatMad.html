@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Privat</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #dcdcdc;
+        }
+
+        .window {
+            width: 900px;
+            margin: 30px auto;
+            background: white;
+            border: 2px solid black;
+        }
+
+        .titlebar {
+            background: #cfcfcf;
+            padding: 5px;
+            border-bottom: 2px solid black;
+        }
+
+        .titlebar span {
+            float: right;
+            border: 1px solid black;
+            padding: 2px 6px;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .banner {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 60px;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 30%;
+            background: #19c300;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            border-top: 2px solid black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background: #e5e5e5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="window">
+
+    <div class="titlebar">
+        Privat
+        <span>X</span>
+    </div>
+
+    <div class="content">
+
+        <div class="top">
+            <div>Hjem</div>
+            <div>
+                <button>Forside</button>
+                <button>Log ud</button>
+            </div>
+        </div>
+
+        <br>
+        <button>Tilbage</button>
+
+        <div class="banner">
+            Bekæmp Madspild
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Opskrifter</h3>
+
+                <img src="opskrift.jpg" width="150">
+
+                <p>Find personlige opskrifter her</p>
+            </div>
+
+            <div class="card">
+                <h3>Nyheder/Events</h3>
+
+                <img src="Nyheder.jpg" width="150">
+
+                <p>Følg med fremtidige events og opslag her</p>
+            </div>
+
+            <div class="card">
+                <h3>Butikker med overskudsvarer</h3>
+
+                <img src="LOCATIONS.jpg" width="150">
+
+                <p>Find butikker med overskudsvarer her</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <button>Kontakt info</button>
+        <button>Sociale medier</button>
+    </div>
+
+</div>
+
+</body>
+</html>
