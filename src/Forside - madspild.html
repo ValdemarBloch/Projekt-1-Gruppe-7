@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Events - Logget ind</title>
 <style>
+
+    html, body {
+    height: 100%;
+    margin: 0;
+    }
     body {
+            display:flex;
+            flex-direction: column;
+
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #F5F5DC;
@@ -86,8 +94,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;        /* Centrerer tekstlinjerne */
-  height: 60px;  /* Gør banneret smalt og ensartet */
+  text-align: center;
+  height: 60px;
   color: #6B8E23;
   font-weight: bold;
 }
@@ -136,7 +144,8 @@ object-fit: cover;
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
-            margin-top: 60px;
+            margin-top: auto;
+
         }
 
     .footer a {
@@ -162,6 +171,10 @@ object-fit: cover;
 
         .image-box{
         text-align: center;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        transitions: 0.3s ease;
         }
         .image-box p {
         margin-top: 10px;
@@ -174,6 +187,7 @@ object-fit: cover;
         .image-box:hover p {
         color: green;
         transform: scale(1.05);
+        cursor: pointer;
         }
     </style>
 </head>
@@ -186,9 +200,9 @@ object-fit: cover;
 <div class="nav">
     <div class="nav-left"></div>
     <div class="nav-right">
-        <a href="#">Nyheder og Events</a>
+        <a href="Event%20-%20madspild.html">Nyheder og Events</a>
         <a href="#">Privat</a>
-        <a href="#">Erhverv</a>
+        <a href="Erhverv%20-%20madspild.html">Erhverv</a>
     </div>
 </div>
 
@@ -204,14 +218,14 @@ object-fit: cover;
 </div>
 <div class="image-container">
 
-    <a href="butik.jpg.html" class="image-box">
+    <a href="Erhverv%20-%20madspild.html" class="image-box">
         <img src="butik.jpg" class="circle-img">
         <p>Red mad</p>
     </a>
 
-    <a href="Butiksbillede.jpg.html" class="image-box">
+    <a href="Erhverv%20-%20madspild.html" class="image-box">
         <img src="Butiksbillede.jpeg" class="circle-img">
-        <p>Læg mad op</p>
+        <p>Find opskrifter</p>
     </a>
 
 </div>
@@ -219,5 +233,6 @@ object-fit: cover;
     <a href="#">Kontakt: +45 45 88 88 88</a>
     <a href="#">Sociale medier</a>
 </div>
+
 </body>
 </html>
