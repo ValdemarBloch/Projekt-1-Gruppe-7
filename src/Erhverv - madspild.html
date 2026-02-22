@@ -1,0 +1,268 @@
+YPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Logget ind</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5F5DC;
+        }
+
+
+        .topbar {
+            background-color: #6B8E23;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            cursor: pointer;
+        }
+
+
+        .nav {
+            background-color: #8DAA4F;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-right a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 6px 14px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+}
+.nav-right a:hover{
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    cursor: pointer;
+
+        }
+
+
+        .back-btn {
+            margin: 20px;
+            padding: 6px 12px;
+            border: 1px solid #999;
+            background-color: #ddd;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .banner {
+            margin: 20px auto;
+            width: 90%;
+            background-color: rgb(142,165,71);
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            border-radius: 8px;
+
+            border: 3px solid #4F6D1F;
+            transition: 0.3s;
+        }
+
+
+        .main-layout {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            width: 95%;
+            margin: 40px auto;
+        }
+
+
+        .side-box {
+            width: 240px;
+            height: 240px;
+            background-color: rgb(142,165,71);
+            color: black;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+
+             border: 3px solid #4F6D1F;
+             transition: 0.3s;
+        }
+
+
+        .events-center {
+            width: 600px;
+        }
+
+
+        .event-box {
+            background-color: rgb(142,165,71);
+            padding: 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+
+             border: 3px solid #4F6D1F;
+    transition: 0.3s;
+        }
+
+
+        .event-img {
+            width: 160px;
+            height: 80px;
+        }
+
+        .event-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+
+        .footer {
+            background-color: #6B8E23;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            padding: 6px 15px;
+            border: 1px solid #999;
+            background-color: transparent;
+            color: white;
+        }
+
+        .banner:hover{
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    cursor: pointer;
+    }
+
+        .event-box:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.side-box:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+
+         (max-width: 1000px) {
+            .main-layout {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .events-center {
+                width: 100%;
+                max-width: 600px;
+            }
+
+            .side-box {
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="topbar">
+    Erhverv
+    <span class="close-btn">X</span>
+</div>
+
+<div class="nav">
+    <div>Nyheder</div>
+    <div class="nav-right">
+        <a href="#">Forside</a>
+        <a href="#">Privat</a>
+        <a href="#">Opret Opslag</a>
+        <a href="#">Log ud</a>
+    </div>
+</div>
+
+<a href="#" class="back-btn">Tilbage</a>
+
+<div class="banner">
+    Erhverv
+</div>
+
+<div class="main-layout">
+
+    <div class="side-box">
+        <h3>Fakta</h3>
+        <p>227.000 tons madspild i servicesektoren.</p>
+        <p>72% stammer fra detailhandel.</p>
+    </div>
+
+    <div class="events-center">
+        <div class="event-box">
+            <div>Mindsk madspild i din butik</div>
+            <div class="event-img">
+                <img src="Stop madspild.jpg" alt="Event 1">
+            </div>
+        </div>
+
+        <div class="event-box">
+            <div>Powerpoint til ansatte</div>
+            <div class="event-img">
+                <img src="PowerpointBillede.jpg" alt="Event 2">
+            </div>
+        </div>
+
+        <div class="event-box">
+            <div>Samarbejde med organisationer</div>
+            <div class="event-img">
+                <img src="MadspildSammen2.jpg" alt="Event 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="side-box">
+        <h3>Vidste du?</h3>
+        <p>Madspild koster danske husholdninger tusindvis af kroner årligt.</p>
+        <p>Planlægning kan reducere spild.</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <a href="#">Kontakt: +45 45 88 88 88</a>
+    <a href="#">Sociale medier</a>
+</div>
+
+</body>
+</html>
