@@ -6,71 +6,79 @@
 <title>Events - Logget ind</title>
 <style>
     body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #F5F5DC;
-    }
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F5F5DC;
 
-    .topbar {
-        background-color: #ddd;
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .close-btn {
-        position: absolute;
-        right: 15px;
-        top: 5px;
-        font-weight: bold;
-        cursor: pointer;
-    }
+        }
 
 
-    .nav {
-        background-color: #eee;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        .topbar {
+            background-color: #6B8E23;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
 
-    .nav-left {
-        font-weight: bold;
-    }
+        .close-btn {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            cursor: pointer;
+        }
 
-    .nav-right a {
-        text-decoration: none;
-        margin-left: 10px;
-        padding: 5px 10px;
-        border: 1px solid #999;
-        background-color: #ddd;
-        color: black;
-    }
 
-    .back-btn {
-        margin: 15px;
-        padding: 5px 10px;
-        border: 1px solid #999;
-        background-color: #ddd;
-        display: inline-block;
-        text-decoration: none;
-        color: black;
+        .nav {
+            background-color: #8DAA4F;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    }
+        .nav-right a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 6px 14px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+}
+.nav-right a:hover{
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    cursor: pointer;
 
-   /* Banner */
-        .banner-large {
+        }
+
+
+        .back-btn {
             margin: 20px;
-            <!--           ;-->
+            padding: 6px 12px;
+            border: 1px solid #999;
+            background-color: #ddd;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .banner {
+            margin: 20px auto;
+            width: 90%;
+            background-color: rgb(142,165,71);
             height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
+            font-size: 36px;
             font-weight: bold;
-            color: #6B8E23;
+            border-radius: 8px;
+            border: 3px solid #4F6D1F;
+            transition: 0.3s;
         }
         .banner-small {
   width: 60%;
@@ -124,21 +132,49 @@ object-fit: cover;
 
     /* Footer */
     .footer {
-        background-color: #ddd;
-        padding: 15px;
-        text-align: center;
-        margin-top: 40px;
-    }
+            background-color: #6B8E23;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+        }
 
     .footer a {
-        text-decoration: none;
-        margin: 0 10px;
-        padding: 5px 15px;
-        border: 1px solid #999;
-        background-color: #eee;
-        color: black;
+            text-decoration: none;
+            padding: 6px 15px;
+            border: 1px solid #999;
+            background-color: transparent;
+            color: white;
+        }
+     .image-container {
+            display: flex;
+            gap: 450px;
+            justify-content: center;
+        }
 
-    }
+        .circle-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid black;
+        }
+
+        .image-box{
+        text-align: center;
+        }
+        .image-box p {
+        margin-top: 10px;
+        font size: 16 px;
+        font-weight:600;
+        color: #333;
+        letter-spacing: 0.5px;
+        transition: 0.3s ease;
+        }
+        .image-box:hover p {
+        color: green;
+        transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -158,13 +194,30 @@ object-fit: cover;
 
 <a href="#" class="back-btn">Tilbage</a>
 
-<div class="banner-large">
+<div class="banner">
     Danmark Mod Madspild
 </div>
 <div class="banner-small">
     Danmark Mod Madspild arbejder for at reducere madspild i hele landet.<br>
     Vi hjælper både butikker og private med at udnytte maden bedre.<br>
     Sammen skaber vi et mere bæredygtigt Danmark.
+</div>
+<div class="image-container">
+
+    <a href="butik.jpg.html" class="image-box">
+        <img src="butik.jpg" class="circle-img">
+        <p>Red mad</p>
+    </a>
+
+    <a href="Butiksbillede.jpg.html" class="image-box">
+        <img src="Butiksbillede.jpeg" class="circle-img">
+        <p>Læg mad op</p>
+    </a>
+
+</div>
+<div class="footer">
+    <a href="#">Kontakt: +45 45 88 88 88</a>
+    <a href="#">Sociale medier</a>
 </div>
 </body>
 </html>
