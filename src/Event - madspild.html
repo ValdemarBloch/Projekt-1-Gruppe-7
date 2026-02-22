@@ -60,10 +60,13 @@ YPE html>
             margin: 20px;
             padding: 6px 12px;
             border: 1px solid #999;
-            background-color: #ddd;
+            background-color: rgb(142,165,71);
             display: inline-block;
             text-decoration: none;
             color: black;
+
+            border: 3px solid #4F6D1F;
+            transition: 0.3s;
         }
 
 
@@ -160,11 +163,7 @@ YPE html>
             color: white;
         }
 
-        .banner:hover{
-        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    transform: scale(1.03);
-    cursor: pointer;
-    }
+
 
         .event-box:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
@@ -175,10 +174,15 @@ YPE html>
 .side-box:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     transform: scale(1.05);
+    cursor: grab
 }
+back-btn:hover {
 
-
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    cursor: pointer;
          (max-width: 1000px) {
+
             .main-layout {
                 flex-direction: column;
                 align-items: center;
